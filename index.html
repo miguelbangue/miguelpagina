@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+            padding: 20px;
+        }
+        .content{
+            margin: auto;
+            border: solid 30px #333;
+            border-top: blue 30px solid;
+            border-radius:50%;
+            width: 250px;
+            height: 250px;
+            animation: rota 2s infinite;
+        }
+        @keyframes rota {
+            0% {
+                transform: rotate(0deg);
+            }
+            50% {
+                transform: rotate(180deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Welcome to the Index Page</h1>
+    <hr>
+    <br>
+    <div class="content">
+      
+    </div>
+
+    <script>
+        // Redirige a otra página después de 3 segundos
+        setTimeout(() => {
+            window.location.href = './page2.html';
+        }, 2500); // 2.5 segundos
+    </script>
+</body>
+</html>
