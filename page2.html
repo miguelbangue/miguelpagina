@@ -307,8 +307,6 @@
 <!-- fin de cartas de promocion de servicios -->
 
 <section data-bs-version="5.1" class="news08 cid-uOLPjbHugl" id="blog-2-uOLPjbHugl">
-    
-    
     <div class="container-fluid">
         <div class="row justify-content-center mb-5">
             <div class="col-12 content-head">
@@ -316,25 +314,28 @@
                     <h4 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
                         <strong>Proyectos</strong>
                     </h4>
-                    
                 </div>
             </div>
         </div>
         <div class="row">
-                            <!-- Modal para video -->
-                <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+                        <!-- Modal único para videos (debe estar dentro de tu sección de proyectos o al final del body) -->
+            <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-lg modal-dialog-centered">
                     <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="videoModalLabel">Proyecto</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-                    </div>
-                    <div class="modal-body">
-                        <!-- El video se insertará aquí -->
-                    </div>
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="videoModalLabel">Proyecto</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                        </div>
+                        <div class="modal-body">
+                            <video id="modalVideo" controls style="width:100%;max-height:70vh;">
+                                <source src="" type="video/mp4">
+                                Tu navegador no soporta el video.
+                            </video>
+                        </div>
                     </div>
                 </div>
-                </div>
+            </div>
+            <!-- Proyecto 1 -->
             <div class="item features-image col-12 col-md-6 col-lg-3 active">
                 <div class="item-wrapper">
                     <div class="item-img mb-3">
@@ -345,28 +346,16 @@
                         <h6 class="item-subtitle mbr-fonts-style mb-3 display-5">
                             <strong>Ecommerce Con Pasarela de Pago</strong>
                         </h6>
-                        
                         <div class="mbr-section-btn item-footer">
-                            <a href="assets/images/video/sitio-web_RhGqWeYt.mp4" id="video-1-uOLPjbHugl" class="btn item-btn btn-primary display-7">Ver Proyecto</a>
+                            <a  class="btn item-btn btn-primary display-7" 
+                            data-bs-toggle="modal"
+                            data-bs-target="#videoModal"
+                            data-video="assets/images/video/sitio-web_RhGqWeYt.mp4">Ver Proyecto</a>
                         </div>
                     </div>
                 </div>
             </div>
-
-                        <!-- Modal para video Inventario PyQT5 -->
-            <div class="modal fade" id="pyqt5Modal" tabindex="-1" aria-labelledby="pyqt5ModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg modal-dialog-centered">
-                <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="pyqt5ModalLabel">Proyecto Inventario PyQT5</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-                </div>
-                <div class="modal-body">
-                    <!-- El video se insertará aquí -->
-                </div>
-                </div>
-            </div>
-            </div>
+            <!-- Proyecto 2 -->
             <div class="item features-image col-12 col-md-6 col-lg-3">
                 <div class="item-wrapper">
                     <div class="item-img mb-3">
@@ -377,13 +366,13 @@
                         <h6 class="item-subtitle mbr-fonts-style mb-3 display-5">
                             <strong>Inventario PyQT5</strong>
                         </h6>
-                        
                         <div class="mbr-section-btn item-footer">
-                            <a href="assets/images/video/pyQT5.mp4" id="py_proyect" class="btn item-btn btn-primary display-7">Ver Proyecto</a>
+                            <a  class="btn item-btn btn-primary display-7" data-bs-toggle="modal" data-bs-target="#videoModal" data-video="assets/images/video/pyQT5.mp4">Ver Proyecto</a>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- Proyecto 3 (solo enlace externo, sin modal) -->
             <div class="item features-image col-12 col-md-6 col-lg-3">
                 <div class="item-wrapper">
                     <div class="item-img mb-3">
@@ -394,27 +383,13 @@
                         <h6 class="item-subtitle mbr-fonts-style mt-0 mb-3 display-5">
                             <strong>CastaPan</strong>
                         </h6>
-                        
                         <div class="mbr-section-btn item-footer">
-                            <a href="https://castapan.com/page/inicio.html" class="btn item-btn btn-primary display-7">Ver el Proyecto</a>
+                            <a href="https://castapan.com/page/inicio.html" target="_blank" class="btn item-btn btn-primary display-7">Ver el Proyecto</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Modal para video Barbería Cuidalook -->
-<div class="modal fade" id="barberiaModal" tabindex="-1" aria-labelledby="barberiaModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="barberiaModalLabel">Proyecto Barbería Cuidalook</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-      </div>
-      <div class="modal-body">
-        <!-- El video se insertará aquí -->
-      </div>
-    </div>
-  </div>
-</div>
+            <!-- Proyecto 4 -->
             <div class="item features-image col-12 col-md-6 col-lg-3">
                 <div class="item-wrapper">
                     <div class="item-img mb-3">
@@ -425,14 +400,12 @@
                         <h6 class="item-subtitle mbr-fonts-style mt-0 mb-3 display-5">
                             <strong>Cuidalook</strong>
                         </h6>
-                        
                         <div class="mbr-section-btn item-footer">
-                            <a href="/miguelbangue-miguel/assets/images/video/Cuidalook.mp4" id="barberia" class="btn item-btn btn-primary display-7">Ver Proyecto</a>
+                            <a  class="btn item-btn btn-primary display-7" data-bs-toggle="modal" data-bs-target="#videoModal" data-video="assets/images/video/Cuidalook.mp4">Ver Proyecto</a>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 </section>
@@ -569,6 +542,8 @@
   <input name="animation" type="hidden">
 
   <script src="assets/bootstrap/js/modales.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/bootstrap/js/modales.js"></script>
   
   </body>
 </html>
